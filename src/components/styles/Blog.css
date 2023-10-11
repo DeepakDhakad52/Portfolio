@@ -1,0 +1,85 @@
+.blog{
+    max-width: 1400px;
+    margin: 5vh auto -5rem auto;
+}
+
+.blog h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.blog .blog-post{
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.blog .blog-post .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.blog .blog-post .card-container .card{
+    width: 20%;
+    height: auto;
+    margin: 1.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #00000045;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.card:hover{
+    scale: 1.1;
+}
+
+.card a{
+    color: #121212;
+}
+
+.blog .blog-post .card-container .card .img-box{
+    height: 18vh;
+    overflow: hidden;
+}
+
+.blog .blog-post .card-container .card .img-box img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-container .card .card-content .channel-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-container .card .card-content h1{
+    font-family: 'Nunito';
+    margin-left: .5rem;
+}
+
+.card-container .card .card-content img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+.card-container .card .card-content .channel-info h2,
+.card-content .channel-info span{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: .7rem;
+}
+
+.blog .social-interaction{
+    width: 50%;
+    margin: 2rem 0;
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.blog .social-interaction p{
+    font-size: 1.5rem;
+}

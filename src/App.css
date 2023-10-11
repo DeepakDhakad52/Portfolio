@@ -1,38 +1,130 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    font-size: 62.5%;
+    --size: 50vmin;
+    --orange-color : #fc8c05;
+    --yellow-color : #d5c455;
+    --fb: #3051f1;
+    --insta: #FF5A5F;
+    --twitter: #1DA1F2;
+    --whatsapp: #25D366;
+    --linkedin: #0077B5;
+    --github: #2b3137;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+html::-webkit-scrollbar-track{
+    background: rgb(235, 202, 245);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--orange-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    background-color: #f8f8f8;
+    /* overflow: hidden; */
 }
 
-.App-link {
-  color: #61dafb;
+span{
+    color: var(--orange-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ********************** Navbar ********************/
+
+.navbar{
+    background-color: #fff;
+    box-shadow: 2px 2px 5px #2b2b2b5e;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+}
+
+.navbar .nav-elements{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.navbar h1{
+    text-align: left;
+    /* text-transform: uppercase; */
+    font-size: 2.5rem;
+}
+
+.navbar h1 a{
+    color: #222222;
+}
+.navbar h1 a {
+    transition: all .5s ease;
+}
+.navbar h1 a:hover, .navbar h1 i:hover{
+    color: var(--orange-color);
+}
+
+.navbar .menuIcon{
+    font-size: 2rem;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.navbar .menuIcon ul{
+    display: flex;
+}
+
+.navbar .menuIcon ul a{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1.8rem;
+    font-size: 1.57rem;
+    color: #0E2431;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.04rem;
+    transition: .5s;
+}
+
+.navbar .menuIcon ul a:hover{
+    color: var(--orange-color);
+}
+
+.active{
+    color: var(--orange-color);
+}
+
+
+/* ***************** Footer ******************** */
+.footer{
+    margin: 1vh auto;
+}
+.footer p{
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.footer p i{
+    color: red;
+}
+
+.footer p span{
+    color: #000;
+    font-weight: 700;
 }

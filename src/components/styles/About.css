@@ -1,0 +1,64 @@
+.about{
+    height: 91.8vh;
+    max-width: 1200px;
+    margin: 5vh auto -5rem auto;
+}
+
+.about h2{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.about-box{
+    display: flex;
+    margin-top: 3rem;
+    /* border: 1px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content{
+    margin-top: 5rem;
+    padding: 3rem;
+}
+
+.about .text{
+    width: 60%;
+}
+
+.about .text h3{
+    color: #2b2b2b;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about .text h4{
+    font-size: 1.6rem;
+    color: #2b2b2b;
+    margin-bottom: 2rem;
+}
+.about .text p{
+    font-size: 1.6rem;
+    font-family: 'Nunito';
+    color: #2b2b2b;
+    margin-bottom: 1rem;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.about .img{
+    width: 40%;
+    padding: 5rem;
+}
+
+.about .img img{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 15px #00000052;
+}
+
+.about .button{
+    border: 1px solid blueviolet;
+    text-align: center;
+    width: 40%;
+}

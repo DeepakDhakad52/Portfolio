@@ -1,0 +1,67 @@
+.not-found{
+    border: 1px solid #fff;
+    height: 100vh;
+    background-image: url('https://assets.codepen.io/1538474/star.svg'),linear-gradient(to bottom, #05007A, #4D007D);
+    background-attachment: fixed;
+}
+
+.mars{
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  height: 27vmin;
+  background: url('https://assets.codepen.io/1538474/mars.svg') no-repeat bottom center;
+  background-size: cover;
+}
+
+.logo-404{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 16vmin;
+  width: 30vmin;
+}
+
+.title{
+  color: white;
+  font-family: 'Nunito';
+  font-weight: 600;
+  text-align: center;
+  font-size: 7vmin;
+  margin-top: 25vmin;
+  margin-bottom: 4vmin;
+}
+
+.subtitle{
+  color: white;
+  font-family: 'Nunito';
+  font-weight: 400;
+  text-align: center;
+  font-size: 3.5vmin;
+  margin-top: -1vmin;
+  margin-bottom: 9vmin;
+}
+
+.astronaut{
+  position: absolute;
+  top: 18vmin;
+  left: 10vmin;
+  height: 30vmin;
+  animation: floating 2s infinite ease-in-out;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    65%  { transform: translateY(15px); }
+    100%   { transform: translateY(-0px); }
+}
+
+.spaceship{
+  position: absolute;
+  bottom: 15vmin;
+  right: 24vmin;
+  height: 20vmin;
+}

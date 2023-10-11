@@ -1,0 +1,111 @@
+.skill-section{
+    height: 80vh;
+    max-width: 1200px;
+    margin: 5vh auto auto;
+}
+
+.skill-section h2{
+    text-align: center;
+    font-size: 4rem;
+}
+
+.container-xl{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.progress-container{
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+    max-width: 100%;
+    padding: 2rem;
+    min-width: 33.33333%;
+    transition-timing-function: ease;
+    transition-duration: 1s;
+    transition-delay: .1s;
+}
+
+.progress-wrap{
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.progress-wrap h3{
+    font-family: "Nunito", Arial, sans-serif;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.progress{
+    line-height: 1.8;
+    font-weight: 400;
+    color: #999999;
+    display: flex;
+    font-size: 0.75rem;
+    border-radius: 0.25rem;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.05);
+    margin-top: 1.5rem;
+}
+
+.progress-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: width 0.6s ease;
+    background: var(--orange-color);
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600;
+    position: relative;
+    border-radius: 2px;
+}
+
+.progress-bar span{
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1.2;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--orange-color);
+}
+
+@media screen and (max-width:480px) {
+    body{
+        overflow: auto;
+    }
+    .progress-container{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width: 920px){
+    body{
+        overflow: auto;
+    }
+    .progress-container{
+        width: 50%;
+    }
+}

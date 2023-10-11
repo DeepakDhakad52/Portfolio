@@ -1,0 +1,106 @@
+.newhome{
+    display: flex;
+    height: 91.8vh;
+}
+
+.newhome div{
+    width: 50%;
+    height: 100%;
+}
+
+.newhome .section1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newhome .section1 .content-box{
+    height: auto;
+    width: auto;
+}
+
+.newhome .section1 .content-box>span{
+    font-size: 2rem;
+}
+
+.newhome .section1 h1{
+    font-size: 7rem;
+}
+
+.newhome .section1 h3{
+    font-size: 2rem;
+}
+
+.newhome .section1 .content-box p a{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 2rem 1rem 0 0;
+    padding: 2rem;
+    color: black;
+    font-weight: 700;
+}
+
+.newhome .section1 .content-box p a:first-child{
+    background: var(--yellow-color) !important;
+    border: 1px solid var(--yellow-color) !important;
+    border-radius: 100px;
+    color: #1d1d1d !important;
+}
+
+.newhome .section1 .content-box p a:last-child{
+    background-color: #fff;
+    border-radius: 100px;
+}
+
+.newhome .section1 .content-box .social-icons{
+    margin-top: 2rem;
+}
+
+.newhome .section1 .content-box .social-icons a{
+    display: inline-block;
+    font-size: 3rem;
+    margin: 2rem auto;
+    color: #000;
+    margin: 0 1rem;
+    transition: all .5s ease-out;
+}
+.newhome .section1 .content-box .social-icons a:hover{
+    transform: scale(1.2);
+}
+
+.newhome .section1 .content-box .social-icons .linkedin{
+    color: var(--linkedin);    
+}
+.newhome .section1 .content-box .social-icons .github{
+    color: var(--github);
+}
+.newhome .section1 .content-box .social-icons .insta{
+    color: var(--insta);
+}
+.newhome .section1 .content-box .social-icons .fb{
+    color: var(--fb);
+}
+.newhome .section1 .content-box .social-icons .twitter{
+    color: var(--twitter);
+}
+.newhome .section1 .content-box .social-icons .whatsapp{
+    color: var(--whatsapp);
+}
+
+.newhome .section2{
+    background-color: var(--yellow-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newhome .section2 .img-box{
+    height: auto;
+    width: 70%;
+}
+
+.newhome .section2 .img-box img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 2px 0px 10px #0000004b;
+}
