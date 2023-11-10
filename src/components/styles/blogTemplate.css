@@ -1,0 +1,101 @@
+.blog-template{
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: 5rem;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #00000046;
+}
+
+.blog-template > *{
+    /* border: 1px solid red; */
+}
+
+.blog-template h2{
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.blog-template > .img-box > img {
+    max-width: 60%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2.5rem;
+    height: auto !important;
+}
+
+.blog-template .author-detail{
+    display: flex;
+    justify-content: center;  
+    margin-top: .5rem;
+    align-items: center;
+}
+
+.blog-template .author-detail > *{
+    margin-right: 5px ;
+    font-size: 1.5rem;
+    color: #727272;
+}
+
+.blog-template .author-detail img{
+    width: 30px !important;  
+    height: 30px;
+    border-radius: 50%;
+}
+
+.blog-template .author-detail > h1{
+    font-weight: 500;
+    color: #000;
+}
+
+.blog-template .author-detail > span{
+    font-size: 2rem;
+    color: var(--orange-color);
+}
+
+.blog-template div.content > p{
+    color: #000;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 1.5rem 0;
+}
+
+.blog-template div.content > h3{
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.comments{
+    max-width: 1000px;
+    margin: 5rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #00000046;
+}
+
+.comments h4{
+    font-size: 1.5rem;
+}
+
+.comments textarea{
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: block;
+    max-width: 100%;
+    width: auto;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 1rem;
+    /* border: .1px solid var(--orange-color); */
+    background-color: #e0e0e0ce;
+}
+
+.comments button{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}

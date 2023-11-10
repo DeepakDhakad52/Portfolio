@@ -11,7 +11,8 @@ import {
 import Skills from './components/Skills';
 import PageNotFound from './components/PageNotFound';
 import Home from './components/Home';
-import Blog from './components/Blog';
+// import Blog from './components/Blog';
+import BlogTemplate from './components/BlogTemplate';
 
 function App() {
     const [close, setClose] = useState(true);
@@ -40,8 +41,8 @@ function App() {
                             <Link onClick={handleOnClick} to="/about"><li className='nav-item'>About</li></Link>
                             <Link onClick={handleOnClick} to="/skills"><li className='nav-item'>Skills</li></Link>
                             <Link onClick={handleOnClick} to="/newHome"><li className='nav-item'>Experiences</li></Link>
-                            <Link onClick={handleOnClick} to="/"><li className='nav-item'>Works</li></Link>
-                            <Link onClick={handleOnClick} to="/blog"><li className='nav-item'>Blog</li></Link>
+                            <Link onClick={handleOnClick} to="/work"><li className='nav-item'>Works</li></Link>
+                            {/* <Link onClick={handleOnClick} to="/blog"><li className='nav-item'>Blog</li></Link> */}
                             <Link onClick={handleOnClick} to="/contact"><li className='nav-item'>Contact Me</li></Link>
                         </ul>
                     </div>
@@ -53,8 +54,8 @@ function App() {
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/skills" element={<Skills />} />
-                    <Route path="/blog" element={<Blog />} />
-                    {/* <Route path='/blog/:id' element={<BlogTemplet />} /> */}
+                    {/* <Route path="/blog" element={<Blog />} /> */}
+                    <Route path='/blog/:id' element={<BlogTemplate />} />
                     <Route path="*" element={<PageNotFound />}/>
                 </Routes>
             </Router>
