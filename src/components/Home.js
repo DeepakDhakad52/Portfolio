@@ -5,7 +5,8 @@ import image from './img/Deepak-cp.jpg'
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
 import About from './About';
-import Skills from './Skills';
+import NewSkills from './NewSkills';
+import Contact from './Contact'
 
 function Home({handleOnClick}) {
     const el = useRef(null);
@@ -39,13 +40,14 @@ function Home({handleOnClick}) {
                             <Link to="/contact">Hire Me <i className="fa-solid fa-arrow-right"></i></Link>
                         </p>
                         <div className="social-icons">
-                            <a href="/" target='blank' className='linkedin'><i className="fa-brands fa-linkedin"></i></a>
-                            <a href="/" target='blank' className='github'><i className="fa-brands fa-github"></i></a>
-                            <a href="/" target='blank' className='insta'><i className="fa-brands fa-instagram"></i></a>
-                            <a href="/" target='blank' className='fb'><i className="fa-brands fa-facebook"></i></a>
-                            <a href="/" target='blank' className='twitter'><i className="fa-brands fa-twitter"></i></a>
-                            <a href="/" target='blank' className='whatsapp'><i className="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://www.linkedin.com/in/dhakad-deepak/" target='blank' className='linkedin'><i className="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/DeepakDhakad52" target='blank' className='github'><i className="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/dhakad____deepak/" target='blank' className='insta'><i className="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/dhakadd745" target='blank' className='fb'><i className="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.twitter.com/Deepak_Dhakad52" target='blank' className='twitter'><i className="fa-brands fa-twitter"></i></a>
+                            {/* <a href="/" target='blank' className='whatsapp'><i className="fa-brands fa-whatsapp"></i></a> */}
                         </div>
+                        <p className='mt-8 text-2xl'>Copyright ©2023 All rights reserved | Made with <i className='fa-solid fa-heart'></i> by <span>Deepak Nagar</span></p>
                     </div>
                 </div>
                 <div className="section2">
@@ -55,7 +57,8 @@ function Home({handleOnClick}) {
                 </div>
             </section>
             <About/>
-            <Skills/>
+            <NewSkills />
+            <Contact />
         </>
     )
 }

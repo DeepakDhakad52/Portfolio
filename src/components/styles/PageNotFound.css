@@ -1,11 +1,11 @@
 .not-found{
-    border: 1px solid #fff;
-    height: 100vh;
+    /* border: 1px solid #fff; */
+    height: 95vh;
     background-image: url('https://assets.codepen.io/1538474/star.svg'),linear-gradient(to bottom, #05007A, #4D007D);
     background-attachment: fixed;
 }
 
-.mars{
+/* .mars{
   left:0;
   right:0;
   bottom:0;
@@ -13,7 +13,7 @@
   height: 27vmin;
   background: url('https://assets.codepen.io/1538474/mars.svg') no-repeat bottom center;
   background-size: cover;
-}
+} */
 
 .logo-404{
   position: absolute;
@@ -21,12 +21,12 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 16vmin;
+  top: 20vmin;
   width: 30vmin;
 }
 
 .title{
-  color: white;
+  color: #fff;
   font-family: 'Nunito';
   font-weight: 600;
   text-align: center;
@@ -59,9 +59,9 @@
     100%   { transform: translateY(-0px); }
 }
 
-.spaceship{
+/* .spaceship{
   position: absolute;
   bottom: 15vmin;
   right: 24vmin;
   height: 20vmin;
-}
+} */

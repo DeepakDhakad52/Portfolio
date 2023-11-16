@@ -3,7 +3,7 @@ import './styles/PageNotFound.css'
 
 function NotFound() {
     return (
-        <div className='not-found'>
+        <div className='not-found border'>
             <div className="mars"></div>
             <img src="https://assets.codepen.io/1538474/404.svg" className="logo-404" alt='Page Not Found' />
             <p className="title">Opps! Page Not Found</p>
@@ -14,7 +14,7 @@ function NotFound() {
                 <Link className="btn" to="/"><i className="fa-solid fa-house"></i> Back to Home page</Link>
             </div>
             <img src="https://assets.codepen.io/1538474/astronaut.svg" className="astronaut" alt='' />
-            <img src="https://assets.codepen.io/1538474/spaceship.svg" className="spaceship" alt='' />
+            {/* <img src="https://assets.codepen.io/1538474/spaceship.svg" className="spaceship" alt='' /> */}
         </div>
     )
 }

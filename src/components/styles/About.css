@@ -13,7 +13,6 @@
 .about-box{
     display: flex;
     margin-top: 3rem;
-    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
 }
@@ -21,6 +20,7 @@
 .about-content{
     margin-top: 5rem;
     padding: 3rem;
+    cursor: pointer;
 }
 
 .about .text{

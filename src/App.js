@@ -8,11 +8,12 @@ import {
     Routes,
     Link
 } from "react-router-dom";
-import Skills from './components/Skills';
 import PageNotFound from './components/PageNotFound';
 import Home from './components/Home';
 // import Blog from './components/Blog';
-import BlogTemplate from './components/BlogTemplate';
+// import BlogTemplate from './components/BlogTemplate';
+import NewSkills from './components/NewSkills';
+import Footer from './components/Footer';
 
 function App() {
     const [close, setClose] = useState(true);
@@ -53,12 +54,13 @@ function App() {
                     <Route path='/' element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
-                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/skills" element={<NewSkills />} />
                     {/* <Route path="/blog" element={<Blog />} /> */}
-                    <Route path='/blog/:id' element={<BlogTemplate />} />
+                    {/* <Route path='/blog/:id' element={<BlogTemplate />} /> */}
                     <Route path="*" element={<PageNotFound />}/>
                 </Routes>
             </Router>
+            <Footer />
         </>
     );
 }

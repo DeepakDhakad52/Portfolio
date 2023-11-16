@@ -7,6 +7,7 @@
     font-family: 'Poppins';
     text-decoration: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -34,11 +35,17 @@ html::-webkit-scrollbar-thumb{
 
 body{
     background-color: #f8f8f8;
-    /* overflow: hidden; */
 }
 
 span{
-    color: var(--orange-color);
+    color: var(--orange-color); 
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: rgb(32, 32, 32);
+    font-weight: 800;
+    text-align: center;
 }
 
 
@@ -65,7 +72,6 @@ span{
 
 .navbar h1{
     text-align: left;
-    /* text-transform: uppercase; */
     font-size: 2.5rem;
 }
 
@@ -111,20 +117,13 @@ span{
 
 
 /* ***************** Footer ******************** */
-.footer{
-    margin: 1vh auto;
-}
-.footer p{
-    font-size: 2rem;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.9);
+.footer {
+    background: rgb(0, 1, 43);
 }
 
-.footer p i{
-    color: red;
+.footer *{
+    color: #fff;
+    font-family: 'Poppins';
 }
 
-.footer p span{
-    color: #000;
-    font-weight: 700;
-}
+
