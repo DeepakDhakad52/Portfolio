@@ -2,8 +2,8 @@ import './styles/Contact.css'
 
 function Contact() {
     return (
-        <>
-            <div className="contact">
+        <section className='bg-white pt-[7vh]' id='contact'>
+            <div className="contact mx-auto" >
                 <h2 className="heading"><i className="fa-regular fa-address-card"></i> Contact <span>Me!</span></h2>
                 <div className="form">
                     <div className='input-box'>
@@ -18,10 +18,7 @@ function Contact() {
                     <button className="btn">Send Message</button>
                 </div>
             </div>
-            {/* <div className="footer">
-                <p>Copyright ©2023 All rights reserved | Made with <i className='fa-solid fa-heart'></i> by <span>Deepak Nagar</span></p>
-            </div> */}
-        </>
+        </section>
     )
 }
 

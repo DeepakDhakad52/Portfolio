@@ -12,7 +12,7 @@ const calculate_age = (dob) => {
 function About() {
     return (
         <>
-            <div className="about" id='about'>
+            <section className="about pt-[5vh]" id='about'>
                 <div className="heading">
                     <h2><i className='fa-solid fa-user-large'></i> About <span>Me</span></h2>
                     <div className="about-box">
@@ -33,7 +33,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <Education />   
         </>
     )

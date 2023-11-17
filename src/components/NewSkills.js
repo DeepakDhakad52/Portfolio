@@ -7,7 +7,7 @@ const skillDetails2 = skillDetails.splice(skillDetails.length / 2 - 4, skillDeta
 
 const NewSkills = () => {
     return (
-        <section className="skills py-8 mb-32 bg-white" id="skills">
+        <section className="skills py-[10vh] mb-32 bg-white" id="skills">
             <h2 className="heading">
                 <i className="fas fa-laptop-code" /> Skills &amp; <span>Abilities</span>
             </h2>

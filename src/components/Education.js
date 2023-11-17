@@ -4,11 +4,11 @@ import school from './img/school.avif'
 
 const Education = () => {
     return (
-        <section className={'bg-blue-50'} id="education">
-            <h1 className="heading pt-8">
+        <section className={'bg-blue-50 pt-[7vh]'} id="education">
+            <h1 className="heading pt-16">
                 <i className="fas fa-graduation-cap" /> My <span>Education</span>
             </h1>
-            <p className={'text-center text-3xl my-8'}>
+            <p className={'text-center text-3xl my-16'}>
                 Education is not the learning of facts, but the training of the mind to
                 think.
             </p>

@@ -7,13 +7,14 @@ import { useEffect, useRef } from "react";
 import About from './About';
 import NewSkills from './NewSkills';
 import Contact from './Contact'
+import Experience from './Experience';
 
-function Home({handleOnClick}) {
+function Home({ handleOnClick }) {
     const el = useRef(null);
 
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ['Web Development', 'Completative Coading', 'Machine Learning', 'Cloud Computing'],
+            strings: ['Web Development', 'Completative Coading', 'Cloud Computing'],
             startDelay: 300,
             typeSpeed: 70,
             backSpeed: 10,
@@ -27,9 +28,10 @@ function Home({handleOnClick}) {
         };
     }, []);
 
+
     return (
         <>
-            <section className='newhome'>
+            <div className='newhome'>
                 <div className="section1">
                     <div className="content-box">
                         <span>Full-Stack Web Developer</span>
@@ -55,9 +57,10 @@ function Home({handleOnClick}) {
                         <img src={image} alt="Deepak Nagar" />
                     </div>
                 </div>
-            </section>
-            <About/>
+            </div>
+            <About />
             <NewSkills />
+            <Experience />
             <Contact />
         </>
     )
