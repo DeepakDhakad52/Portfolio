@@ -18,7 +18,6 @@ function App() {
 
     React.useEffect(() => {
         const navList = document.querySelectorAll('.nav-item');
-        console.log(navList);
         const handleScroll = () => {
             if (window.scrollY >= 0 && window.scrollY <= 780) {
                 navList.forEach(link => link.classList.remove('active'));
