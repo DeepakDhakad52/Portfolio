@@ -48,82 +48,10 @@ span{
     text-align: center;
 }
 
-
-/* ********************** Navbar ********************/
-
-.navbar{
-    background-color: #fff;
-    box-shadow: 0px 0px 2px #2b2b2b2d;
-    z-index: 10;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 2rem;
-}
-
-.navbar .nav-elements{
-    display: flex;
-    max-width: 80vw;
-    margin: auto;
-    justify-content: space-between;
-
-}
-
-.navbar h1{
-    text-align: left;
-    font-size: 2.5rem;
-}
-
-.navbar h1 a{
-    color: #222222;
-}
-.navbar h1 a {
-    transition: all .5s ease;
-}
-.navbar h1 a:hover, .navbar h1 i:hover{
-    color: var(--orange-color);
-}
-
-.navbar .menuIcon{
-    font-size: 2rem;
-    padding: .5rem;
-    cursor: pointer;
-}
-
-.navbar .menuIcon ul{
-    display: flex;
-}
-
-.navbar .menuIcon ul a{
-    list-style: none;
-    display: inline-block;
-    margin-left: 1.8rem;
-    font-size: 1.57rem;
-    color: #0E2431;
-    font-weight: 600;
-    text-decoration: none;
-    letter-spacing: 0.04rem;
-    transition: .5s;
-}
-
-.navbar .menuIcon ul a:hover{
-    color: var(--orange-color);
-}
-
 .active{
     color: var(--orange-color);
 }
 
 
-/* ***************** Footer ******************** */
-.footer {
-    background: rgb(0, 1, 43);
-}
-
-.footer *{
-    color: #fff;
-    font-family: 'Poppins';
-}
 
 

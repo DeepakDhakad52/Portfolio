@@ -56,39 +56,41 @@ function App() {
     return (
         <>
             <Router>
-                <div className="navbar shadow-md">
-                    <div className="nav-elements">
-                        <h1><Link to="/"><i className="fa-brands fa-node-js"></i> Deepak</Link></h1>
-                        <div className="menuIcon">
-                            {/* {close ? <i className="fa-solid fa-xmark" onClick={handleOnClick}></i> : <i className="fa-solid fa-bars" onClick={handleOnClick}></i>} */}
-                            <ul className='nav-items'>
-                                <a href="/#"><li className='nav-item active'>Home</li></a>
-                                <a href="/#about"><li className='nav-item'>About</li></a>
-                                <a href="/#education"><li className='nav-item'>Education</li></a>
-                                <a href="/#skills"><li className='nav-item'>Skills</li></a>
-                                <a href="/#experience"><li className='nav-item'>Experiences</li></a>
-                                <a href="/work"><li className='nav-item'>Works</li></a>
-                                {/* <Link onClick={handleOnClick} to="/blog"><li className='nav-item'>Blog</li></Link> */}
-                                <a href="/#contact"><li className='nav-item'>Contact Me</li></a>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+                <Navbar />
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/skills" element={<NewSkills />} />
                     <Route path="/experience" element={<Experience />} />
-                    {/* <Route path="/blog" element={<Blog />} /> */}
-                    {/* <Route path='/blog/:id' element={<BlogTemplate />} /> */}
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
             </Router>
             <Footer />
         </>
     );
+}
+
+const Navbar = () => {
+    const listClass = 'inline-block ml-[1.8rem] text-[1.57rem] font-semibold duration-300 hover:text-orange-color'
+    return (
+        <div className="bg-white sticky top-0 p-6 z-10 shadow-md">
+            <div className="flex max-w-[80vw] mx-auto justify-between">
+                <h1 className='text-[2.5rem] hover:text-orange-color'><Link to="/" className='transition duration-400'><i className="fa-brands fa-node-js"></i> Deepak</Link></h1>
+                <div className="cursor-pointer p-2">
+                    <ul>
+                        <a href="/#"><li className={`nav-item active ${listClass}`}>Home</li></a>
+                        <a href="/#about"><li className={`nav-item ${listClass}`}>About</li></a>
+                        <a href="/#education"><li className={`nav-item ${listClass}`}>Education</li></a>
+                        <a href="/#skills"><li className={`nav-item ${listClass}`}>Skills</li></a>
+                        <a href="/#experience"><li className={`nav-item ${listClass}`}>Experiences</li></a>
+                        <a href="/work"><li className={`nav-item ${listClass}`}>Works</li></a>
+                        <a href="/#contact"><li className={`nav-item ${listClass}`}>Contact Me</li></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default App;

@@ -9,7 +9,7 @@ import NewSkills from './NewSkills';
 import Contact from './Contact'
 import Experience from './Experience';
 
-function Home({ handleOnClick }) {
+function Home() {
     const el = useRef(null);
 
     useEffect(() => {
@@ -47,9 +47,8 @@ function Home({ handleOnClick }) {
                             <a href="https://www.instagram.com/dhakad____deepak/" target='blank' className='insta'><i className="fa-brands fa-instagram"></i></a>
                             <a href="https://www.facebook.com/dhakadd745" target='blank' className='fb'><i className="fa-brands fa-facebook"></i></a>
                             <a href="https://www.twitter.com/Deepak_Dhakad52" target='blank' className='twitter'><i className="fa-brands fa-twitter"></i></a>
-                            {/* <a href="/" target='blank' className='whatsapp'><i className="fa-brands fa-whatsapp"></i></a> */}
                         </div>
-                        <p className='mt-8 text-2xl'>Copyright ©2023 All rights reserved | Made with <i className='fa-solid fa-heart'></i> by <span>Deepak Nagar</span></p>
+                        <p className='mt-8 text-2xl'>Copyright ©2023 All rights reserved | Made with <i className='fa-solid fa-heart text-red-600'></i> by <span>Deepak Nagar</span></p>
                     </div>
                 </div>
                 <div className="section2">
